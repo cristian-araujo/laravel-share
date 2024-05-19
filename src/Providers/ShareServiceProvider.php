@@ -1,9 +1,9 @@
 <?php
 
-namespace Jorenvh\Share\Providers;
+namespace CristianAraujo\Share\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Jorenvh\Share\Share;
+use CristianAraujo\Share\Share;
 
 class ShareServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jorenvh\Share\Test;
+namespace CristianAraujo\Share\Test;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
