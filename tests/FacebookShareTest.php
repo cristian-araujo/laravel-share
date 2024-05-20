@@ -1,8 +1,8 @@
 <?php
 
-namespace Jorenvh\Share\Test;
+namespace CristianAraujo\Share\Test;
 
-use Jorenvh\Share\ShareFacade;
+use CristianAraujo\Share\ShareFacade;
 
 class FacebookShareTest extends TestCase
 {

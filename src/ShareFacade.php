@@ -1,6 +1,6 @@
 <?php
 
-namespace Jorenvh\Share;
+namespace CristianAraujo\Share;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -25,6 +25,6 @@ class ShareFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return Share::class;
+        return 'share';
     }
 }
