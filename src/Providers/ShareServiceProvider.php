@@ -12,6 +12,10 @@ class ShareServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app->singleton('share', function ($app) {
+            return new Share();
+        });
+
         $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang/', 'laravel-share');
 
         $this->publishes([
@@ -19,8 +23,9 @@ class ShareServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__ . '/../../public/js/share.js' => public_path('js/share.js'),
+            __DIR__ . '/../../resources/scss/share.scss' => resource_path('scss/share.scss'),
         ], 'assets');
+
 
         $this->publishes([
             __DIR__ . '/../../resources/lang/' => resource_path('lang/vendor/laravel-share'),
@@ -38,5 +43,6 @@ class ShareServiceProvider extends ServiceProvider
         });
 
         $this->mergeConfigFrom(__DIR__ . '/../../config/laravel-share.php', 'laravel-share');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'laravel-share');
     }
 }
