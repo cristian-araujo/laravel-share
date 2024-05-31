@@ -9,7 +9,7 @@ class LinkedInService extends ShareService
 {
     public function buildLink(): string
     {
-        $base = Config::get('laravel-share.services.linkedin.uri');
+        $base = Config::get('laravel-share.socials.linkedin.uri');
         $params = [
             'mini' => true,
             'url' => $this->url,

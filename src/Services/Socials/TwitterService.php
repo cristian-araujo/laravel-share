@@ -9,8 +9,8 @@ class TwitterService extends ShareService
 {
     public function buildLink(): string
     {
-        $this->title ??= Config::get('laravel-share.services.twitter.text');
-        $base = Config::get('laravel-share.services.twitter.uri');
+        $this->title ??= Config::get('laravel-share.socials.twitter.text');
+        $base = Config::get('laravel-share.socials.twitter.uri');
         $params = [
             'text' => $this->title,
             'url' => $this->url,

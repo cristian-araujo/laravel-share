@@ -9,7 +9,7 @@ class FacebookService extends ShareService
 {
     public function buildLink(): string
     {
-        $base = Config::get('laravel-share.services.facebook.uri');
+        $base = Config::get('laravel-share.socials.facebook.uri');
         return $base . urlencode($this->url);
     }
 }

@@ -9,7 +9,7 @@ class TelegramService extends ShareService
 {
     public function buildLink(): string
     {
-        $base = Config::get('laravel-share.services.telegram.uri');
+        $base = Config::get('laravel-share.socials.telegram.uri');
         $params = [
             'url' => $this->url,
             'text' => $this->title,

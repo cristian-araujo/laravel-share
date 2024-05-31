@@ -9,8 +9,8 @@ class RedditService extends ShareService
 {
     public function buildLink(): string
     {
-        $this->title ??= Config::get('laravel-share.services.reddit.text');
-        $base = Config::get('laravel-share.services.reddit.uri');
+        $this->title ??= Config::get('laravel-share.socials.reddit.text');
+        $base = Config::get('laravel-share.socials.reddit.uri');
         $params = [
             'title' => $this->title,
             'url' => $this->url,
