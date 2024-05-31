@@ -9,7 +9,7 @@ class WhatsAppService extends ShareService
 {
     public function buildLink(): string
     {
-        $base = Config::get('laravel-share.services.whatsapp.uri');
+        $base = Config::get('laravel-share.socials.whatsapp.uri');
         return $base . urlencode($this->url);
     }
 }
