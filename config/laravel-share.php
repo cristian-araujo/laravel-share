@@ -3,6 +3,7 @@
 return [
     'fontAwesomeVersion' => 5,
     'showShareText' => true,
+    'link_target' => '_self',
     'socials' => [
         'facebook' => [
             'uri' => 'https://www.facebook.com/sharer/sharer.php?u=',
